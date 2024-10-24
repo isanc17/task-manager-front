@@ -1,0 +1,25 @@
+<div class="login-container">
+  <div
+    class="login-wrapper"
+    style="display: flex; justify-content: space-between; align-items: center"
+  >
+    <div class="login-form-container">
+      <bdb-tp-xcenter-login-form [loginTitle]="loginTitle" urlImg="https://sherpa.labdigitalbdbtvs.com/assets/img/xcenter-login/img-panoramica-pamn.png">
+        <bdb-ml-xcenter-login-form
+          slot="slot-content"
+          [elements]="loginElements"
+          [formGroup]="loginForm"
+          (infoSubmit)="login($event)"
+        >
+        </bdb-ml-xcenter-login-form>
+      </bdb-tp-xcenter-login-form>
+    </div>
+  </div>
+
+  <!-- Loader -->
+
+  <div>
+    <bdb-ml-loader #loader></bdb-ml-loader>
+  </div>
+</div>
+
