@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../src/app/app.component.scss';
+
+@import "../node_modules/@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection/assets/fonts/fonts.scss";
+$font-family-path: "~@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection";
+@import "@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection/assets/fonts/fonts.scss";
+$icons-path: "~@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection";
+@import "@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection/assets/fonts/icons.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $Midnight-50 !important;
+    font-family: 'ROBOTO', sans-serif;
+  }
+  footer{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'ROBOTO', sans-serif;
+    background-color: #0040a8 !important;
+  }
+  header{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'ROBOTO', sans-serif;
+    background-color: #0040a8 !important;
+  }
+  hr {
+    margin: 2px 0 !important;
+    color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+  }
+  
+  
+  
+  ul {
+    list-style: none;
+    padding: auto;
+    margin: auto;
+    border-radius: 10px !important;
+    overflow: hidden;
+  }
+  
+  li{
+    padding: 2px;
+    // border-bottom: 1px solid #0040a8;
+  }
+  
+  .page-link {
+  
+    &.active,
+    .active > & {
+      z-index: 3;
+      background-color: #0040a8 !important
+      // border-color: #0040a8 !important;
+    }
+  }
+  
+  table-pager {
+    align-items: center !important;
+  }
+  

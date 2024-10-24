@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "npm run set-env && ng serve",
+    "jfrog-dependencies": "bash ./install-dependencies.sh",
+    "set-env": "node scripts/set-env.js",
+    "build": "npm run set-env && ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -18,6 +20,8 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@npm-bbta/bbog-dig-dt-webcomponents-lib": "^5.2.6",
+    "dotenv": "^16.4.5",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
